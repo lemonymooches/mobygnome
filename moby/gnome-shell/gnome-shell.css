@@ -1,0 +1,262 @@
+
+
+  #panel { 
+    height: 55px;    
+    background-color: transparent;                           			/* bar size*/    
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(90, 90, 90, 0.75);    
+    background-gradient-end:rgba(40, 40, 40, 0.75);
+box-shadow: 0 2px 15px rgba(70, 70, 70, 0.5);
+} 
+
+            #overview {
+              background-image: url(beanie.png);
+              background-repeat: repeat;
+            }
+.overview-icon {
+    background: rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+    color: rgb(230, 230, 230);            
+    box-shadow: 0 0 20px rgba(85, 85, 85, 0.8);
+    border-radius: 20px !important; 
+  }
+    .popup-menu, .popup-menu .popup-menu-content {
+      border-radius: 40px;
+        }
+        .popup-menu .popup-menu-item:checked {
+          }
+
+          .search-entry {
+            width: 320px;
+            border: 3px;
+            caret-color: #00aabb;
+            caret-size: 1px;
+            padding: 7px 9px;
+            border-radius: 2px;
+            box-shadow: 0 2px 8px 0 rgba(0,0,0,0.9);
+        }
+        .search-entry:hover {
+            background-color: rgba(255,255,255,0.2);
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+            transition-duration: 200ms;
+        }
+        .search-entry:focus {
+            background-color: white;
+            color: #000;
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+            transition-duration: 200ms;
+        }
+        .search-entry .search-entry-icon {
+            icon-size: 1em;
+            padding: 0 4px;
+            color: #00aabb;
+        }
+        .search-entry:hover .search-entry-icon {
+            color: #00aabb;
+        }
+        .search-entry:focus .search-entry-icon {
+            color: #777;
+        }
+#dash {	background-color: transparent;}
+      
+ #dash .dash-background {
+	box-shadow: inset 0 0 10px 4px rgba(0, 0, 0, 0.3);
+	background-color: rgba(70,70,70,0.5);
+	border-radius: 30px;
+	transition-duration: 250ms;
+}
+
+/* if used Dash to Dock extension */
+#dashtodockContainer #dash .dash-background {
+	box-shadow: inset 0 0 10px 4px rgba(0, 0, 0, 0.3);
+	background-color: rgba(70,70,70,0.5);
+	border-radius: 30px;
+	transition-duration: 250ms;
+}
+
+/* when dash in overview */
+#dashtodockContainer.overview #dash .dash-background {
+	box-shadow: inset 0 0 10px 4px rgba(0, 0, 0, 0.3);
+	background-color: rgba(70,70,70,0.5);
+	transition-duration: 250ms;
+}
+
+
+/* ubuntu fix */
+#dashtodockContainer.bottom.extended #dash .dash-background,
+#dashtodockContainer.bottom.extended.dashtodock #dash .dash-background,
+#dashtodockContainer.bottom.extended.shrink #dash .dash-background,
+#dashtodockContainer.top.extended #dash .dash-background,
+#dashtodockContainer.top.extended.dashtodock #dash .dash-background,
+#dashtodockContainer.top.extended.shrink #dash .dash-background,
+#dashtodockContainer.left.extended #dash .dash-background,
+#dashtodockContainer.left.extended.dashtodock #dash .dash-background,
+#dashtodockContainer.left.extended.shrink #dash .dash-background,
+#dashtodockContainer.right.extended #dash .dash-background,
+#dashtodockContainer.right.extended.dashtodock #dash .dash-background,
+#dashtodockContainer.right.extended.shrink #dash .dash-background {
+	background-color: transparent;
+}
+
+    /* Menu de apps seleccionado */
+
+    .app-well-app .overview-icon,
+    .app-well-app.app-folder .overview-icon,
+    .show-apps .overview-icon,
+    .grid-search-result .overview-icon {
+      background: rgba(0, 0, 0, 0.6);
+      transition: 0.5s;
+      color: rgb(230, 230, 230);            
+      box-shadow: 0 0 20px rgba(85, 85, 85, 0.8);
+      border-radius: 20px;
+        }
+
+    .app-well-app:active .overview-icon, .app-well-app:checked .overview-icon,
+.app-well-app.app-folder:active .overview-icon,
+.app-well-app.app-folder:checked .overview-icon,
+.show-apps:active .overview-icon,
+.show-apps:checked .overview-icon,
+.grid-search-result:active .overview-icon,
+.grid-search-result:checked .overview-icon {
+    background-color: rgba(114, 114, 114, 0.7);
+    box-shadow: 0 0 20px rgba(85, 85, 85, 0.8);
+    border-radius: 20px;
+}
+
+.app-well-app:hover .overview-icon, .app-well-app:focus .overview-icon, .app-well-app:selected .overview-icon,
+.show-apps:hover .overview-icon,
+.show-apps:focus .overview-icon,
+.show-apps:selected .overview-icon,
+.grid-search-result:hover .overview-icon,
+.grid-search-result:focus .overview-icon,
+.grid-search-result:selected .overview-icon {
+      background-color: rgba(219, 219, 219, 0.35);
+  box-shadow: 0 0 20px rgba(85, 85, 85, 0.8);
+  border-radius: 20px;
+}
+.app-well-app:focus, .app-well-app.app-folder:hover .overview-icon,
+.app-well-app.app-folder:focus .overview-icon,
+.app-well-app.app-folder:selected .overview-icon {
+    background-color: rgba(0, 171, 187, 0.7);
+    box-shadow: 0 0 20px rgba(85, 85, 85, 0.8);
+    border-radius: 20px;
+}
+
+
+.app-well-app-running-dot {
+    border-radius: 5px;
+    width: 20px;
+    height: 4px;
+    background-color: blue;
+    box-shadow: inset -1px -1px 0 0 rgba(0,0,0,.5);
+    margin-bottom: 2px;
+}
+
+.search-provider-icon,
+.list-search-result, .app-well-app .overview-icon,
+.app-well-app.app-folder .overview-icon,
+.show-apps .overview-icon,
+.grid-search-result .overview-icon {
+    color: #dbdee0;
+      background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 6px;
+    border: 1px solid transparent;
+    transition-duration: 150ms;
+    text-align: center;
+}
+
+.app-well-app.app-folder > .overview-icon {
+    background-color: rgba(159, 176, 185, 0.2); 
+    box-shadow: 0 0 20px rgba(85, 85, 85, 0.2);
+    border-radius: 20px;
+  }
+
+.show-apps:checked .show-apps-icon,
+.show-apps:focus .show-apps-icon {
+    color: white;
+    transition-duration: 100ms; }
+    
+/* Search */
+#searchResults {
+  margin: 0 4px; }
+
+#searchResultsContent {
+  max-width: 1072px; }
+
+.search-section {
+  spacing: 18px; }
+  .search-section .search-section-separator {
+    height: 8px;
+    background-color: transparent; }
+
+.search-section-content {
+  background-color: rgba(13, 13, 13, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  box-shadow: inset 0 0 0 1px solid rgba(222, 221, 218, 0.07), 0 2px 4px 0 rgba(255, 255, 255, 0.2);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  color: #f6f5f4;
+  padding: 12px;
+  margin: 0 12px; }
+
+.list-search-result, .search-provider-icon {
+  background-color: transparent;
+  border-radius: 11px; }
+  .list-search-result:hover, .search-provider-icon:hover {
+    background-color: rgba(246, 245, 244, 0.1); }
+  .list-search-result:selected, .search-provider-icon:selected, .list-search-result:focus, .search-provider-icon:focus {
+    background-color: rgba(246, 245, 244, 0.13); }
+    .list-search-result:selected:hover, .search-provider-icon:selected:hover, .list-search-result:focus:hover, .search-provider-icon:focus:hover {
+      background-color: rgba(246, 245, 244, 0.16); }
+    .list-search-result:selected:active, .search-provider-icon:selected:active, .list-search-result:focus:active, .search-provider-icon:focus:active {
+      background-color: rgba(246, 245, 244, 0.13); }
+  .list-search-result:active, .search-provider-icon:active {
+    background-color: rgba(246, 245, 244, 0.16); }
+  .list-search-result:outlined, .search-provider-icon:outlined, .list-search-result:checked, .search-provider-icon:checked {
+    background-color: rgba(246, 245, 244, 0.19); }
+    .list-search-result:outlined:active, .search-provider-icon:outlined:active, .list-search-result:checked:active, .search-provider-icon:checked:active {
+      background-color: rgba(246, 245, 244, 0.22); }
+    .list-search-result:outlined:hover, .search-provider-icon:outlined:hover, .list-search-result:checked:hover, .search-provider-icon:checked:hover {
+      background-color: rgba(246, 245, 244, 0.25); }
+  .list-search-result:drop, .search-provider-icon:drop {
+    border: 2px solid rgba(53, 132, 228, 0.8);
+    background-color: rgba(53, 132, 228, 0.2); }
+
+.search-statustext {
+  color: rgba(246, 245, 244, 0.8); }
+
+.grid-search-results {
+  spacing: 30px;
+  margin: 0 12px; }
+
+.search-provider-icon:ltr {
+  margin-right: 4px; }
+
+.search-provider-icon:rtl {
+  margin-left: 4px; }
+
+.search-provider-icon .list-search-provider-content {
+  spacing: 12px; }
+  .search-provider-icon .list-search-provider-content .list-search-provider-details {
+    width: 120px;
+    color: #f6f5f4; }
+
+.list-search-results {
+  spacing: 6px; }
+
+.list-search-result .list-search-result-content {
+  spacing: 6px; }
+
+.list-search-result .list-search-result-title {
+  spacing: 12px; }
+
+.list-search-result .list-search-result-description {
+  color: #fff; }
+.app-folder-dialog {
+	border-radius: 30px;
+	background-color: rgba(252, 249, 244, 0.7);
+	border: 0px;
+	padding: 0; /* because of icon grid */
+	box-shadow: inset 10 10 10 10px #333;
+}
